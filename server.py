@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     return "eGl3ZWk="
 
-@app.route('/api/get_function',methods = ['GET',POST'])
+@app.route('/api/get_function',methods = ['GET','POST'])
 def get_function():
     ops = { '+': operator.add, '-': operator.sub ,'*':operator.mul}
     datadict = request.get_json()
